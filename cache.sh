@@ -1,6 +1,6 @@
 #!/bin/bash
-dirs=`ls`
+dirs=`ls .`
 for dir in $dirs
 do
-	`rm -rf $dir/.git`
+	`git rm --cached $dir`
 done
